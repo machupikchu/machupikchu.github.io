@@ -9,17 +9,17 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Centrarium
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
-email: blcentra@gmail.com
-name: Ben Centra
+title: Machu Pikchu
+subtitle: "Perú Gourmet"
+email: gerente@machupikchu.com.co
+name: Machu Pikchu - Perú Gourmet
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  Comida peruana.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "/centrarium" # the subpath of your site, e.g. /blog/
-url: "http://bencentra.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.machupikchu.com.co" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -73,28 +73,28 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    url:
     desc: Follow me on Twitter
     share: true
 
   - name: Facebook
     icon: facebook
-    username: thebencentra
-    url:
-    desc: Friend me on Facebook
+    username: /Machu Pikchu Perú Gourmet
+    url: https://www.facebook.com/Machupikchu-Per%C3%B9-Gourmet-1055426211135275
+    desc: Síguenos en Facebook
     share: true
 
   - name: GitHub
     icon: github
     username: bencentra
-    url: https://github.com/bencentra
+    url:
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
     username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    url:
     desc: Connect with me on LinkedIn
     share: true
 
@@ -114,9 +114,9 @@ social:
 
   - name: Instagram
     icon: instagram
-    username:
-    url:
-    desc: Follow me on Instagram
+    username: MachuPikchu
+    url: https://instagram.com/machupikchu
+    desc: Síguenos en Instagram
     share: false
 
   - name: Pinterest
