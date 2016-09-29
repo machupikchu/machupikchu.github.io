@@ -20,7 +20,7 @@ description: >
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.machupikchu.com.co" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
+slider: "/assets/imagen-slider-parallax.jpg"
 logo: "/assets/logos/logo.png"
 logo-xs: "/assets/logos/logo-xs.png"
 

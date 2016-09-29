@@ -1,16 +1,32 @@
 ---
 layout: default
 ---
-<div class="home">
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
-      <h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    </header>
+<section id="slider-parallax">
+  <div class="swiper-container">
+    <div class="parallax-bg" style="background-image:url({{ site.slider | prepend: site.baseurl }})" data-swiper-parallax="-15%"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-caption">
+          <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Comida Peruana</div>
+          <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Los mejores sabores desde la costa hasta la sierra del país inca.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-caption">
+          <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Fusiones Gastronómicas</div>
+          <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Conozca una de las gastronomías más variadas a nivel mundial.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-caption">
+          <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Equipo Especializado</div>
+          <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Maestros en gastronomía y chefs internacionales.</div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
 <div class="wrapper">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis libero posuere dictum molestie. Ut sit amet venenatis leo. Praesent finibus tellus sodales facilisis mattis. Suspendisse eleifend lectus risus, quis sagittis turpis ultricies iaculis. Ut tempus luctus orci, vitae iaculis ligula bibendum vitae. Phasellus sodales, nunc a interdum aliquam, leo.</p>

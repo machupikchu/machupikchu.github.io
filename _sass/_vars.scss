@@ -3,10 +3,13 @@
 
 // Colores
 $blanco: #ffffff;
+$negro: #000000;
 $marron: #722100;
 $marron_claro: lighten($marron, 60%);
 $rojo: #ff0000;
 $rojo_oscuro: darken($rojo, 20%);
+
+$opaco: rgba(0, 0, 0, 0.4);
 
 // Fuentes
 $fuente-base: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
