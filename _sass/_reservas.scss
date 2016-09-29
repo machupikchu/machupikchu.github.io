@@ -1,9 +1,18 @@
 #reservas {
-  padding: 60px;
+  padding: 60px 0;
   font-size: 16px;
   color: $rojo_claro;
   h3 {
     color: $rojo_claro;
     text-transform: uppercase;
+  }
+}
+
+@media(max-width: 767px) {
+  #reservas {
+    p {
+      top: -15px;
+      position: relative;
+    }
   }
 }
