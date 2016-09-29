@@ -3,17 +3,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  {% if site.name %}
-  <meta name="author" content="{{ site.name }}">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% comment %}<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">{% endcomment %}
+  <meta name="author" content="HorMinka">
+  <!--
   <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}">
-  {% endif %}
+  -->
 
   <!-- External libraries -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Bootstrap Core CSS -->
+  <link href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <!--
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/{{ site.highlightjs_theme }}.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+  -->
 
   <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
   <link rel="shortcut icon" href="{{ "/assets/icons/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
@@ -33,10 +36,10 @@
   <link rel="icon" type="image/png" sizes="96x96" href="{{ "/assets/icons/favicon-96x96.png" | prepend: site.baseurl }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/icons/favicon-16x16.png" | prepend: site.baseurl }}">
   <link rel="manifest" href="{{ "/assets/icons/manifest.json" | prepend: site.baseurl }}">
-  -->
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{ "/assets/icons/ms-icon-144x144.png" | prepend: site.baseurl }}">
   <meta name="theme-color" content="#ffffff">
+  -->
 
   {% if site.protocols.fb_image %}
   <!-- Facebook OGP cards -->
