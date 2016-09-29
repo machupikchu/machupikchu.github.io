@@ -12,5 +12,12 @@ $rojo_oscuro: darken($rojo, 20%);
 $opaco: rgba(0, 0, 0, 0.4);
 
 // Fuentes
-$fuente-base: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$fuente-base: "Roboto", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $fuente-titulos: "BerlinSans", "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$color-fuente-base: $negro;
+$color-titulos: $rojo_oscuro;
+$size-fuente-base: $em-base;
+$altura-linea-base: 1.8;
+$altura-linea-titulos: 1.8;
+$espaciado-base: $altura-linea-base * $em-base;
+$espaciado-small: $espaciado-base / 2;

@@ -1,0 +1,28 @@
+.btn {
+  font-family: $fuente-titulos;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.15s ease-in-out;
+  font-size: $size-fuente-base;
+  letter-spacing: 1px;
+  box-shadow: none;
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus {
+    outline: 0 none;
+  }
+}
+.btn-primary {
+  color: $blanco;
+  background-color: $rojo_oscuro;
+  &:focus,
+  &.focus {
+    color: $blanco;
+    background-color: $marron;
+  }
+  &:hover {
+    color: $blanco;
+    background-color: $marron;
+  }
+}

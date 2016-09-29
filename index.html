@@ -4,105 +4,49 @@ layout: default
 
 <section id="slider-parallax">
   <div class="swiper-container">
-    <div class="parallax-bg" style="background-image:url({{ site.slider | prepend: site.baseurl }})" data-swiper-parallax="-15%"></div>
+    <div class="parallax-bg" data-swiper-parallax="-15%" style="background-image:url({{ site.slider | prepend: site.baseurl }});"></div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="swiper-caption">
-          <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Comida Peruana</div>
-          <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Los mejores sabores desde la costa hasta la sierra del país inca.</div>
+          <div class="title" data-swiper-parallax="-100">Comida Peruana</div>
+          <div class="subtitle" data-swiper-parallax="-200">Los mejores sabores desde la costa hasta la sierra del país inca.</div>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="swiper-caption">
-          <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Fusiones Gastronómicas</div>
-          <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Conozca una de las gastronomías más variadas a nivel mundial.</div>
+          <div class="title" data-swiper-parallax="-100">Fusiones Gastronómicas</div>
+          <div class="subtitle" data-swiper-parallax="-200">Conozca una de las gastronomías más variadas a nivel mundial.</div>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="swiper-caption">
-          <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Equipo Especializado</div>
-          <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Maestros en gastronomía y chefs internacionales.</div>
+          <div class="title" data-swiper-parallax="-100">Equipo Especializado</div>
+          <div class="subtitle" data-swiper-parallax="-200">Maestros en gastronomía y chefs internacionales.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="wrapper">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis libero posuere dictum molestie. Ut sit amet venenatis leo. Praesent finibus tellus sodales facilisis mattis. Suspendisse eleifend lectus risus, quis sagittis turpis ultricies iaculis. Ut tempus luctus orci, vitae iaculis ligula bibendum vitae. Phasellus sodales, nunc a interdum aliquam, leo.</p>
-<!--
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-      <div class="post-categories">
-      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
-        {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% else %}
-        <span>{{ cat | capitalize }}</span>{% if forloop.last == false %}, {% endif %}
-        {% endif %}
-      {% endfor %}{% endif %}
+<section id="chef">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-center">
+        <h1>Nuestro Chef</h1>
+        <p>Andrés García es un apasionado chef que inició sus  labores gastronómicas en Perú y ahora nos deleita con sus sabores propios y manejo de comida internacional.</p>
       </div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-<nav class="pagination" role="navigation">
-  <p>
-    {% if paginator.next_page %}
-    <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    {% else %}
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-    </span>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-      <a class="newer-posts" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-      {% else %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-      {% endif %}
-    {% else %}
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-    </span>
-    {% endif %}
-  </p>
-  <p>
-    <a href="{{ site.baseurl }}/posts">View All Posts by Category</a>
-  </p>
-</nav>
-
--->
-</div>
-</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 imagen-chef">
+        <img src="{{ "assets/chef.jpg" | prepend: site.baseurl }}" class="img-responsive" alt="chef">
+      </div>
+      <div class="col-sm-12 col-md-6 texto-chef">
+        <h2 class="text-center">Nuestro Restaurante</h2>
+        <p><strong>Machupikchu Perú Gourmet</strong> es un restaurante especializado en comida peruana, que se encarga junto con su equipo de cocina altamente calificado de transportar al cliente desde la costa hasta la sierra del país inca, a través de <strong>fusiones gastronómicas con productos de la más alta calidad.</strong></p>
+        <p>Todo esto con el fin de satisfacer los gustos de sus clientes y llevar desde el Perú a cada una de las personas que lo visitan <strong>sabores que perdurarán en su paladar</strong>.</p>
+        <p>&nbsp;</p>
+        <a type="button" class="btn btn-primary btn-lg btn-block" href="{{ "/nosotros/" | prepend: site.baseurl }}">Ver Más</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -6,12 +6,14 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 // Includes Bourbon, Neat, and Bitters (thanks, thoughtbot!)
 @import
+  "bourbon/bourbon",
   "vars",
   "fuentes",
+  "botones",
   "navegacion",
   "footer",
   "swiper-parallax",
-  "bourbon/bourbon",
+  "chef",
   "base/base",
   "neat/neat",
   "layout"
