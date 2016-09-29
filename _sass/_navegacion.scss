@@ -39,7 +39,7 @@ header {
       }
     }
     &:after, &:before {
-      border-top: 1px solid $marron;
+      border-top: 1px solid $marron_claro;
       content: "";
       margin: 0 auto;
       position: absolute;
@@ -80,7 +80,7 @@ header {
   }
 }
 .icon-bar {
-  background: $marron;
+  background: $marron_claro;
 }
 @media (max-width: 767px) {
   .navbar-collapse .navbar-center {
