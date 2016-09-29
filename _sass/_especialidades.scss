@@ -1,0 +1,73 @@
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 0;
+}
+#especialidades .cover {
+  height: 400px;
+}
+.marco {
+  background-color: $blanco;
+  z-index: 1;
+  padding: 80px 30px;
+  position: relative;
+}
+
+@media (min-width: 767px) {
+  .marco {
+    margin-top: -100px;
+  }
+}
+.carta {
+  font-size: 18px;
+  text-align: center;
+  ul {
+    margin: 15px 0;
+    padding: 15px;
+  }
+  li {
+    list-style: none;
+    position: relative;
+    padding-bottom: 15px;
+    .descripcion {
+      color: $gris;
+      font-weight: 300;
+      font-size: 14px;
+    }
+    &:before {
+      border-top: 1px dotted $gris_claro;
+      content: "";
+      margin: 0 auto;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  div {
+    line-height: 1.2;
+    display: table;
+    width: 100%;
+    p {
+      display: table-cell;
+    }
+    .nombre span {
+      background: $blanco;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+.adorno-titulo {
+  vertical-align: middle;
+  &:after,
+  &:before {
+    content: "*";
+    margin: 0 15px;
+    color: $rojo_oscuro;
+  }
+}

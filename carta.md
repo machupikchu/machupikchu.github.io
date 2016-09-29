@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Servicios"
-permalink: /servicios/
+title: "Carta"
+permalink: /carta/
 orden: 2
 ---
 
