@@ -4,6 +4,7 @@
 // Colores
 $blanco: #ffffff;
 $marron: #722100;
+$marron_claro: lighten($marron, 60%);
 $rojo: #ff0000;
 $rojo_oscuro: darken($rojo, 20%);
 
