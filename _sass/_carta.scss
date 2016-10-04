@@ -1,0 +1,26 @@
+#carta {
+  text-align: center;
+  h4 {
+    padding-top: 30px;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+    }
+  }
+  .row {
+    padding-bottom: 60px;
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #carta {
+    .marco {
+      padding-top: 0px;
+    }
+  }
+}
