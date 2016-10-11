@@ -2,7 +2,11 @@
 <script src='{{ "/js/jquery-3.1.1.min.js" | prepend: site.baseurl }}'></script>
 <script src='{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}'></script>
 <script src='{{ "/js/swiper.jquery.min.js" | prepend: site.baseurl }}'></script>
+{% comment %}<script src='{{ "/js/gmap3.min.js" | prepend: site.baseurl }}'></script>{% endcomment %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyq0buvgtvq-64YigVhE8w_kWMIDdERIk&callback=initMap" async defer></script>
 
+
+{% include mapa.js.html %}
 <!-- Initialize Swiper -->
 <script>
 	var swiper = new Swiper('.swiper-container', {
