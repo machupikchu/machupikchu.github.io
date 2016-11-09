@@ -9,11 +9,7 @@
   height: 400px;
 }
 .marco {
-  background: $marron; /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient($rojo, $marron); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient($rojo, $marron); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient($rojo, $marron); /* For Firefox 3.6 to 15 */
-  background: radial-gradient($rojo, $marron); /* Standard syntax */
+  background: $blanco;
   z-index: 1;
   padding: 80px 30px;
   position: relative;
@@ -25,6 +21,11 @@
   }
 }
 .carta {
+  background: $marron; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient($rojo, $marron); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient($rojo, $marron); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient($rojo, $marron); /* For Firefox 3.6 to 15 */
+  background: radial-gradient($rojo, $marron); /* Standard syntax */
   font-size: 18px;
   text-align: center;
   h2, p {
