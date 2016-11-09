@@ -120,13 +120,13 @@ layout: default
           <span>Altico <strong>Neiva</strong></span>
         </address>
         <p><strong>Horario</strong>
-          <br />12m - 3pm
-          <br />8pm - 10pm</p>
+        <br /><strong>Lun - Jue:</strong> 12m - 3pm y 6pm - 11pm
+        <br /><strong>Vie - Dom:</strong> 6pm - 12pm</p>
         <p>&nbsp;</p>
         <p>
         {% for social in site.social %}
           {% if social.url != null %}
-            <a href="{{ social.url }}" title="{{ social.desc }}"><i class="fa fa-{{ social.icon }}" aria-hidden="true"></i></a>
+            <a href="{{ social.url }}" title="{{ social.desc }}" target="_blank"><i class="fa fa-{{ social.icon }}" aria-hidden="true"></i></a>
           {% endif %}
         {% endfor %}
           <a href="{{ "/contacto/" | prepend: site.baseurl }}" title="Contáctanos"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
