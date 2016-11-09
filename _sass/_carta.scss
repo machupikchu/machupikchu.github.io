@@ -15,12 +15,32 @@
       padding-bottom: 0px;
     }
   }
+  .marco {
+    padding: 0px;
+    h2 {
+      margin: 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: $rojo-oscuro;
+      color: $blanco;
+    }
+  }
+  .seccion-carta {
+    border-bottom: 2px $rojo-oscuro solid;
+    border-left: 2px $rojo-oscuro solid;
+    border-right: 2px $rojo-oscuro solid;
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
   #carta {
     .marco {
       padding-top: 0px;
+    }
+    .seccion-carta {
+      border: 0;
     }
   }
 }
