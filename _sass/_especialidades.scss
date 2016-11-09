@@ -9,7 +9,11 @@
   height: 400px;
 }
 .marco {
-  background-color: $blanco;
+  background: $marron; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient($rojo, $marron); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient($rojo, $marron); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient($rojo, $marron); /* For Firefox 3.6 to 15 */
+  background: radial-gradient($rojo, $marron); /* Standard syntax */
   z-index: 1;
   padding: 80px 30px;
   position: relative;
@@ -23,6 +27,9 @@
 .carta {
   font-size: 18px;
   text-align: center;
+  h2, p {
+  color: $blanco;
+  }
   ul {
     margin: 15px 0;
     padding: 15px;
@@ -32,12 +39,12 @@
     position: relative;
     padding-bottom: 15px;
     .descripcion {
-      color: $gris;
+      //color: $gris;
       font-weight: 300;
       font-size: 14px;
     }
     &:before {
-      border-top: 1px dotted $gris_claro;
+      //border-top: 1px dotted $gray;
       content: "";
       margin: 0 auto;
       position: absolute;
@@ -56,7 +63,7 @@
       display: table-cell;
     }
     .nombre span {
-      background: $blanco;
+      //background: $blanco;
       padding-right: 10px;
       padding-left: 10px;
     }
@@ -68,6 +75,6 @@
   &:before {
     content: "*";
     margin: 0 15px;
-    color: $rojo_oscuro;
+    color: $blanco;
   }
 }
