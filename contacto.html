@@ -23,11 +23,9 @@ orden: 3
                 Altico, Neiva
 							</address>
 						<address>
-								+ 49 123 456 789 <br />
-								+ 49 234 567 890 <br />
+								telefono: + (57) (8) 8721621<br />
 							</address>
 						<address>
-								{% comment %}correo: <a href="/cdn-cgi/l/email-protection#650f0a0025001d04081509004b060a08"><span class="__cf_email__" data-cfemail="cca6a3a98ca9b4ada1bca0a9e2afa3a1">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>{% endcomment %}
 								correo: <a href="/cdn-cgi/l/email-protection#650f0a0025001d04081509004b060a08">contacto@machupikchu.com.co</a>
 							</address>
 						<p>
@@ -40,11 +38,11 @@ orden: 3
 						</p>
 					</div>
 					<div class="col-sm-8">
-						<form name="contact_form" id="contact_form" method="post" class="form-horizontal">
+						<form action="https://formspree.io/contacto@machupikchu.com.co" name="contact_form" id="contact_form" method="post" class="form-horizontal">
 							<div class="form-group">
 								<label class="col-sm-2 control-label">Nombre</label>
 								<div class="col-sm-10 animated-form-control">
-									<input type="text" name="name" class="text form-control" id="Form_Form_name" required="required" aria-required="true" />
+									<input type="text" name="nombre" class="text form-control" id="Form_Form_name" required="required" aria-required="true" />
 								</div>
 
 							</div>
@@ -57,16 +55,18 @@ orden: 3
 							<div class="form-group">
 								<label class="col-sm-2 control-label">Mensaje</label>
 								<div class="col-sm-10 animated-form-control">
-									<textarea name="message" class="textarea form-control" required="required" rows="5" cols="20"></textarea>
+									<textarea name="mensaje" class="form-control" required="required" rows="5" cols="20"></textarea>
 								</div>
 							</div>
 							<div class="form-group">
 								<br/>
 								<div class="col-sm-12 col-md-12 ">
-									<a id="submit_btn" class="btn btn-primary pull-right">Enviar</a>
-
+									<button id="submit_btn" type="submit" class="btn btn-primary pull-right">Enviar</button>
 								</div>
 							</div>
+              <input type="hidden" name="_subject" value="[contacto website]" />
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="hidden" name="_next" value="http://www.machupikchu.com.co" />
 						</form>
 					</div>
 				</div>
