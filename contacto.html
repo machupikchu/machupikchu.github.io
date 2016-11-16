@@ -16,28 +16,27 @@ orden: 3
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1 col-md-12">
 				<div class="row">
-					<div class="col-sm-4 col-xs-12">
-						<address>
-              <strong>Machu Pikchu - Perú Gourmet</strong><br />
-                Carrera 14 # 6-50 <br />
-                Altico, Neiva
-							</address>
-						<address>
-								telefono: + (57) (8) 8721621<br />
-							</address>
-						<address>
-								correo: <a href="/cdn-cgi/l/email-protection#650f0a0025001d04081509004b060a08">contacto@machupikchu.com.co</a>
-							</address>
-						<p>
-              {% for social in site.social %}
-                {% if social.url != null %}
-                  <a href="{{ social.url }}" title="{{ social.desc }}"><i class="fa fa-{{ social.icon }}" aria-hidden="true"></i></a>
-                {% endif %}
-              {% endfor %}
-                <a href="{{ "/contacto/" | prepend: site.baseurl }}" title="Contáctanos"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+					<div class="col-sm-5 col-xs-12">
+            <p>
+              <strong>Carrera 14 # 6-50</strong><br />
+              <span>Altico <strong>Neiva</strong></span><br />
+              <span>teléfono: + (57) (8) 8721621</span><br />
+              <span>correo: <a href="mailto:contacto@machupikchu.com.co">contacto@machupikchu.com.co</a></span>
+            </p>
+            <p><strong>Horario</strong>
+            <br /><strong>Lun - Vie:</strong> 12m - 3pm y 6pm - 11pm
+            <br /><strong>Sab:</strong> 12m - 12pm
+            <br /><strong>Dom y Fest:</strong> 12m - 4pm</p>
+            <p class="iconos">
+            {% for social in site.social %}
+              {% if social.url != null %}
+                <a href="{{ social.url }}" title="{{ social.desc }}" target="_blank"><i class="fa fa-{{ social.icon }}" aria-hidden="true"></i></a>
+              {% endif %}
+            {% endfor %}
 						</p>
 					</div>
-					<div class="col-sm-8">
+					<div class="col-sm-7">
+            <h3>Escríbenos</h3>
 						<form action="https://formspree.io/contacto@machupikchu.com.co" name="contact_form" id="contact_form" method="post" class="form-horizontal">
 							<div class="form-group">
 								<label class="col-sm-2 control-label">Nombre</label>

@@ -4,7 +4,8 @@
       var uluru = {lat: 2.928482, lng: -75.280434};
                         var map = new google.maps.Map(document.getElementById('map'), {
                                     zoom: 17,
-                                              center: uluru
+                                              center: uluru,
+    scrollwheel: false
                                                         });
                                 var marker = new google.maps.Marker({
                                             position: uluru,
