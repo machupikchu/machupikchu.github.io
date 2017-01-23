@@ -27,7 +27,7 @@ orden: 3
             <br /><strong>Lun - Vie:</strong> 12m - 3pm y 6pm - 11pm
             <br /><strong>Sab:</strong> 12m - 12pm
             <br /><strong>Dom y Fest:</strong> 12m - 4pm</p>
-            <p>
+            <p class="iconos">
             {% for social in site.social %}
               {% if social.url != null %}
                 <a href="{{ social.url }}" title="{{ social.desc }}" target="_blank"><i class="fa fa-{{ social.icon }}" aria-hidden="true"></i></a>
